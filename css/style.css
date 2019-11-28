@@ -2922,7 +2922,12 @@ h6 {
 /* Footer Area css
 ============================================================================================ */
 .footer_area {
-  background: #000410; }
+  display: flex;
+  background: #000410; 
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
 
 .f_title {
   margin-bottom: 35px; }
