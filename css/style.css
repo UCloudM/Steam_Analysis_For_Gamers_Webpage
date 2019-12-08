@@ -77,6 +77,10 @@ button:focus {
 .p_120 {
   padding-top: 120px;
   padding-bottom: 120px; }
+.p_50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
 .pad_top {
   padding-top: 120px; }
@@ -1157,6 +1161,24 @@ button:focus {
 /* End Reservation Form Area css
 ============================================================================================ */
 /*============== contact_area css ================*/
+.map-container{
+  overflow:hidden;
+  padding-bottom:0%;
+  padding-top:0%;
+  position:relative;
+  height:0;
+  }
+  .map-container iframe{
+  left:0;
+  top:0;
+  padding-left:10%;
+  padding-right:10%;
+  height:100%;
+  width:100%;
+  position:absolute;
+  }
+
+
 .mapBox {
   height: 420px;
   margin-bottom: 80px; }
