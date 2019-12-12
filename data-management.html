@@ -77,7 +77,45 @@
         
         
 		<!--================Screen Area =================-->
-		
+		<section class="made_life_area p_120">
+        	<div class="container">
+        		<div class="made_life_inner">
+					<div class="row made_life_text">
+						<div class="col-lg-6">
+							<div class="left_side_text">
+								<h3>Tratamiendo de los Datasets<br /></h3>
+								<p>Para leer correctamente el dataset de requisitos fue necesario leerlo en formato .txt y pasar un filtro
+									con expresiones regulares para eliminar todo el código HTML y posteriormente guardar el resultado
+									en un nuevo archivo .csv.</p>
+								<p></br></p>
+								<p>Después de esto se lee el .csv, seleccionando solo el appId y la columna de mínimos y se pasa todo el
+									texto a minúsculas. Posteriormente se seleccionan las filas que contienen la palabra “hz”, de modo
+									que nos quedamos exclusivamente con aquellos requisitos que cuentan con la frecuencia exacta
+									entre sus especificaciones. Por último, dado que la columna de requisitos, en algunos casos, incluía
+									también la de mínimos (el .csv tenía no tenía en algunas filas el carácter de separación de la
+									columna) fue necesario pasar otro filtro usando una expresión regular para eliminarlos.</p>
+								<p></br></p>
+								<p>Por otro lado, del dataset de Intel tuvimos que limpiar aquellos datos de procesadores que no eran
+									válidos para jugar o que estaban incompletos, para lo primero filtramos usando la columna
+									“Vertical_Segment”, eliminando las columnas que contienen valores como ‘4’, ‘null’ o ‘ 1600”’,
+									mientras que para lo segundo seleccionamos aquellas filas que no tenían la frecuencia o el número
+									de procesador vacíos. Tras esto se sacó la frecuencia da cada fila multiplicando por 1000 en caso de
+									ser GHz.</p>
+								<p></br></p>
+								<p>El dataset de AMD en cambio, solo tenía un par de valores incorrectos, que casualmente eran
+									aquellos que tenían los valores en “MHz” así bastó con selecciona aquellos que no incluían la
+									palabra. Después se extrajo el número de la columna y se multiplicó por 1000 (todos eran GHz).</p>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="chart_img">
+								<img class="img-fluid" src="img/spark.webp" alt="">
+							</div>
+						</div>
+					</div>
+        		</div>
+        	</div>
+        </section>
         
         <!--================End Screen Area =================-->
         
